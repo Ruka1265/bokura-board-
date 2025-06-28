@@ -6,10 +6,6 @@
 
 *A real-time anonymous message board where anyone can freely post messages. Built with Firebase Firestore for real-time updates and responsive design for seamless experience across all devices.*
 
-## 🚀 Demo
-
-**Live Demo:** [https://your-app-url.web.app](https://your-app-url.web.app)
-
 ## ✨ 主な機能
 
 - **リアルタイム投稿**: 投稿が即座に全ユーザーに反映
