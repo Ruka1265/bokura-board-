@@ -1,12 +1,65 @@
-# React + Vite
+# ぼくらの掲示板 🗣️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**リアルタイム匿名掲示板アプリケーション**
 
-Currently, two official plugins are available:
+誰でも自由に投稿できるシンプルなリアルタイム掲示板です。Firebase Firestoreを使用してリアルタイムでメッセージが更新され、レスポンシブデザインでモバイルからデスクトップまで快適にご利用いただけます。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*A real-time anonymous message board where anyone can freely post messages. Built with Firebase Firestore for real-time updates and responsive design for seamless experience across all devices.*
 
-## Expanding the ESLint configuration
+## 🚀 Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Live Demo:** [https://your-app-url.web.app](https://your-app-url.web.app)
+
+## ✨ 主な機能
+
+- **リアルタイム投稿**: 投稿が即座に全ユーザーに反映
+- **140文字制限**: 簡潔でわかりやすいメッセージ投稿
+- **投稿削除**: 自分の投稿のみ削除可能
+- **連続投稿制限**: 10秒のクールダウンでスパム防止
+- **レスポンシブデザイン**: モバイル・タブレット・デスクトップ対応
+- **匿名システム**: アカウント登録不要で気軽に利用
+
+## 🛠️ 技術スタック
+
+### Frontend
+- **React** 19.1.0 - モダンなUIライブラリ
+- **Vite** 7.0.0 - 高速ビルドツール
+- **TailwindCSS** 3.4.17 - ユーティリティファーストCSS
+
+### Backend
+- **Firebase** 11.9.1 - BaaS（Backend as a Service）
+- **Cloud Firestore** - リアルタイムNoSQLデータベース
+- **Firebase Hosting** - 静的サイトホスティング
+
+### 開発ツール
+- **ESLint** - コード品質管理
+- **PostCSS** & **Autoprefixer** - CSS最適化
+
+##  プロジェクト構成
+
+```
+bokura-board/
+├── src/
+│   ├── App.jsx          # メインアプリケーション
+│   ├── PostInput.jsx    # 投稿入力コンポーネント
+│   ├── firebase.js      # Firebase設定
+│   └── main.jsx         # エントリーポイント
+├── public/
+├── firebase.json
+├── package.json
+└── README.md
+```
+
+## 🎯 使用方法
+
+1. **投稿**: 入力欄にメッセージを入力して「投稿する」ボタンをクリック
+2. **閲覧**: 投稿一覧で他のユーザーの投稿をリアルタイムで確認
+3. **削除**: 自分の投稿に表示される削除ボタンで投稿を削除
+
+## 📝 ライセンス
+
+MIT License
+
+## 👤 作成者
+
+**寺田 光** - [GitHub](https://github.com/your-username)
