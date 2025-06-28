@@ -3,6 +3,7 @@
 **リアルタイム匿名掲示板アプリケーション**
 
 誰でも自由に投稿できるシンプルなリアルタイム掲示板です。Firebase Firestoreを使用してリアルタイムでメッセージが更新され、レスポンシブデザインでモバイルからデスクトップまで快適にご利用いただけます。
+URL: https://today-note-app.web.app/
 
 *A real-time anonymous message board where anyone can freely post messages. Built with Firebase Firestore for real-time updates and responsive design for seamless experience across all devices.*
 
