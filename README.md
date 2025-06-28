@@ -59,4 +59,4 @@ MIT License
 
 ## 👤 作成者
 
-**寺田 光** - [GitHub](https://github.com/your-username)
+**寺田 光** - [GitHub](https://github.com/Ruka1265)
