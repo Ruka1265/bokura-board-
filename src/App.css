@@ -1,0 +1,211 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* モバイル用のルート調整 */
+@media (max-width: 767px) {
+  #root {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    overflow-x: hidden;
+  }
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* フェードインアニメーション */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+/* 投稿カードのホバーエフェクト強化 */
+.post-card {
+  transition: all 0.3s ease-in-out;
+}
+
+.post-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* リアルタイム更新の視覚的フィードバック */
+.real-time-indicator {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #10b981;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.real-time-indicator.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* モバイル対応のスタイル */
+@media (max-width: 767px) {
+  /* 全体の横スクロール防止 */
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+  }
+  
+  /* タッチ操作のためのボタンサイズ調整 */
+  button {
+    min-height: 44px; /* iOSガイドライン推奨の最小タップ領域 */
+  }
+  
+  /* スクロールバーの非表示（iOS Safari対応） */
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* フォーカス時のズーム防止 */
+  input, textarea, select {
+    font-size: 16px; /* 16px以上でズームを防止 */
+  }
+  
+  /* テキストの折り返し強化 */
+  .break-words {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  
+  /* 投稿フォームエリアの調整 */
+  .order-2 {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 0;
+  }
+  
+  /* 投稿一覧エリアの調整 */
+  .order-1 {
+    flex: 1;
+    min-height: 60vh; /* 最小高さを確保 */
+  }
+  
+  /* すべての要素に最大幅制限 */
+  .w-full {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+/* タブレット以上では通常のホバーエフェクト */
+@media (min-width: 768px) {
+  /* PC版では通常のスタイルを維持 */
+}
+
+/* モバイルでのホバーエフェクト無効化 */
+@media (max-width: 767px) and (hover: none) {
+  .hover\:shadow-md:hover {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+  
+  .hover\:bg-red-50:hover {
+    background-color: transparent;
+  }
+  
+  .hover\:text-red-700:hover {
+    color: #ef4444;
+  }
+}
+
+/* タブレット用の調整 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .md\:w-80 {
+    width: 20rem;
+  }
+}
+
+/* 高さが低いデバイス用の調整 */
+@media (max-height: 600px) {
+  .max-h-\[40vh\] {
+    max-height: 35vh;
+  }
+  
+  .min-h-\[200px\] {
+    min-height: 150px;
+  }
+}
+
+/* iPhone SE (小画面)用の特別調整 */
+@media (max-width: 375px) {
+  .px-4 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  
+  .p-3 {
+    padding: 0.5rem;
+  }
+}
